@@ -1,0 +1,297 @@
+{
+  "crops": [
+    {
+      "id": 1,
+      "name": "Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "category": "vegetable",
+      "growing_season": ["summer", "monsoon"],
+      "common_diseases": ["early_blight", "late_blight", "bacterial_spot", "septoria_leaf_spot"],
+      "common_pests": ["aphids", "whiteflies", "tomato_hornworm", "spider_mites"],
+      "nutrient_requirements": {
+        "nitrogen": "medium",
+        "phosphorus": "high",
+        "potassium": "high"
+      },
+      "water_requirements": "moderate",
+      "soil_ph": "6.0-7.0",
+      "growing_period_days": 90,
+      "regional_varieties": {
+        "north_india": ["Pusa Ruby", "Pusa Early Dwarf"],
+        "south_india": ["Arka Vikas", "Arka Saurabh"],
+        "west_india": ["Manali", "Rashmi"],
+        "east_india": ["Pusa Uphar", "Pusa Gaurav"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Potato",
+      "scientific_name": "Solanum tuberosum",
+      "category": "tuber",
+      "growing_season": ["winter", "spring"],
+      "common_diseases": ["late_blight", "early_blight", "potato_scab", "black_leg"],
+      "common_pests": ["colorado_potato_beetle", "potato_tuber_worm", "aphids"],
+      "nutrient_requirements": {
+        "nitrogen": "low",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "water_requirements": "moderate",
+      "soil_ph": "5.0-6.5",
+      "growing_period_days": 120,
+      "regional_varieties": {
+        "north_india": ["Kufri Jyoti", "Kufri Chandramukhi"],
+        "south_india": ["Kufri Sindhuri", "Kufri Bahar"],
+        "west_india": ["Kufri Lauvkar", "Kufri Chipsona"],
+        "east_india": ["Kufri Khyati", "Kufri Pukhraj"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Rice",
+      "scientific_name": "Oryza sativa",
+      "category": "cereal",
+      "growing_season": ["monsoon", "summer"],
+      "common_diseases": ["blast", "bacterial_leaf_blight", "sheath_blight", "tungro"],
+      "common_pests": ["brown_plant_hopper", "green_leafhopper", "rice_pests", "stem_borer"],
+      "nutrient_requirements": {
+        "nitrogen": "high",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "water_requirements": "high",
+      "soil_ph": "5.5-6.5",
+      "growing_period_days": 120,
+      "regional_varieties": {
+        "north_india": ["Basmati 370", "Pusa Basmati 1121"],
+        "south_india": ["IR64", "Samba Mahsuri"],
+        "west_india": ["GR4", "Jaya"],
+        "east_india": ["Swarna", "MTU 7029"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Wheat",
+      "scientific_name": "Triticum aestivum",
+      "category": "cereal",
+      "growing_season": ["winter", "spring"],
+      "common_diseases": ["rust", "karnal_bunt", "loose_smut", "septoria_blotch"],
+      "common_pests": ["aphids", "termites", "armyworm", "cutworm"],
+      "nutrient_requirements": {
+        "nitrogen": "high",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "water_requirements": "low",
+      "soil_ph": "6.0-7.5",
+      "growing_period_days": 110,
+      "regional_varieties": {
+        "north_india": ["HD 2967", "PBW 343", "WH 711"],
+        "south_india": ["NIAW 301", "NIAW 34"],
+        "west_india": ["GW 322", "Lok 1"],
+        "east_india": ["HD 2888", "HD 3086"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Corn/Maize",
+      "scientific_name": "Zea mays",
+      "category": "cereal",
+      "growing_season": ["monsoon", "summer"],
+      "common_diseases": ["corn_smut", "northern_leaf_blight", "southern_leaf_blight", "stalk_rot"],
+      "common_pests": ["corn_borer", "armyworm", "cutworm", "aphids"],
+      "nutrient_requirements": {
+        "nitrogen": "high",
+        "phosphorus": "high",
+        "potassium": "high"
+      },
+      "water_requirements": "moderate",
+      "soil_ph": "5.8-7.0",
+      "growing_period_days": 90,
+      "regional_varieties": {
+        "north_india": ["PMH 1", "PMH 2", "Vijay"],
+        "south_india": ["CO 6", "CO 8"],
+        "west_india": ["GM 2", "GM 3"],
+        "east_india": ["Pusa Composite 3", "Pusa Composite 4"]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "category": "fiber",
+      "growing_season": ["summer", "monsoon"],
+      "common_diseases": ["boll_rot", "alternaria_leaf_spot", "bacterial_blight", "fusarium_wilt"],
+      "common_pests": ["bollworm", "aphids", "whiteflies", "mealybugs"],
+      "nutrient_requirements": {
+        "nitrogen": "medium",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "water_requirements": "moderate",
+      "soil_ph": "5.8-7.2",
+      "growing_period_days": 150,
+      "regional_varieties": {
+        "north_india": ["F 846", "F 1378"],
+        "south_india": ["SVPR 2", "SUVIN"],
+        "west_india": ["G cot 100", "G cot 104"],
+        "east_india": ["MCU 5", "PKV 081"]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Chili/Pepper",
+      "scientific_name": "Capsicum annuum",
+      "category": "vegetable",
+      "growing_season": ["summer", "monsoon"],
+      "common_diseases": ["leaf_spot", "powdery_mildew", "bacterial_wilt", "anthracnose"],
+      "common_pests": ["thrips", "mites", "aphids", "fruit_borer"],
+      "nutrient_requirements": {
+        "nitrogen": "medium",
+        "phosphorus": "high",
+        "potassium": "high"
+      },
+      "water_requirements": "moderate",
+      "soil_ph": "6.0-7.0",
+      "growing_period_days": 120,
+      "regional_varieties": {
+        "north_india": ["Pusa Jwala", "Pusa Sadabahar"],
+        "south_india": ["K 1", "K 2"],
+        "west_india": ["G 4", "M 32"],
+        "east_india": ["BSS 406", "BSS 447"]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Onion",
+      "scientific_name": "Allium cepa",
+      "category": "vegetable",
+      "growing_season": ["winter", "spring"],
+      "common_diseases": ["purple_blotch", "downy_mildew", "basal_rot", "anthracnose"],
+      "common_pests": ["thrips", "onion_maggot", "armyworm"],
+      "nutrient_requirements": {
+        "nitrogen": "medium",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "water_requirements": "moderate",
+      "soil_ph": "6.0-7.0",
+      "growing_period_days": 100,
+      "regional_varieties": {
+        "north_india": ["Pusa Red", "Pusa Madhavi"],
+        "south_india": ["NHRDF Red", "Bhima Red"],
+        "west_india": ["Agrifound Dark Red", "Nasik Red"],
+        "east_india": ["Pusa Riddhi", "Pusa Richi"]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "id": "early_blight",
+      "name": "Early Blight",
+      "scientific_name": "Alternaria solani",
+      "affected_crops": ["tomato", "potato"],
+      "symptoms": [
+        "Dark brown to black concentric rings on older leaves",
+        "Target-like spots 1-2 cm in diameter",
+        "Yellowing around spots",
+        "Can affect stems and fruits"
+      ],
+      "causes": "Fungal infection spread by wind and rain",
+      "favorable_conditions": {
+        "temperature": "20-25°C",
+        "humidity": "High humidity",
+        "season": "Warm, humid weather"
+      },
+      "treatment": {
+        "organic": "Copper-based fungicides, neem oil spray, remove affected leaves",
+        "chemical": "Chlorothalonil, mancozeb, or copper hydroxide applications",
+        "preventive": "Crop rotation, resistant varieties, proper spacing, avoid overhead watering"
+      }
+    },
+    {
+      "id": "late_blight",
+      "name": "Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "affected_crops": ["tomato", "potato"],
+      "symptoms": [
+        "Water-soaked spots on leaves",
+        "White fuzzy growth on undersides",
+        "Dark brown lesions on stems and fruits",
+        "Rapid spread in cool, wet conditions"
+      ],
+      "causes": "Fungal-like organism spread by wind and rain",
+      "favorable_conditions": {
+        "temperature": "15-20°C",
+        "humidity": "Very high humidity, frequent rain",
+        "season": "Cool, wet weather"
+      },
+      "treatment": {
+        "organic": "Copper sprays, good drainage, destroy infected plants",
+        "chemical": "Metalaxyl, mefenoxam, or chlorothalonil fungicides",
+        "preventive": "Resistant varieties, proper spacing, avoid overhead irrigation, monitoring"
+      }
+    },
+    {
+      "id": "powdery_mildew",
+      "name": "Powdery Mildew",
+      "scientific_name": "Erysiphe spp.",
+      "affected_crops": ["chili", "cucumber", "squash"],
+      "symptoms": [
+        "White powdery coating on leaves",
+        "Yellowing and curling of affected leaves",
+        "Stunted growth",
+        "Reduced fruit production"
+      ],
+      "causes": "Fungal infection spread by wind",
+      "favorable_conditions": {
+        "temperature": "20-25°C",
+        "humidity": "Moderate humidity, poor air circulation",
+        "season": "Warm, dry weather with cool nights"
+      },
+      "treatment": {
+        "organic": "Sulfur spray, neem oil, milk spray, improve air circulation",
+        "chemical": "Triadimefon, propiconazole, or myclobutanil fungicides",
+        "preventive": "Resistant varieties, proper spacing, good air circulation, avoid excessive nitrogen"
+      }
+    }
+  ],
+  "pests": [
+    {
+      "id": "aphids",
+      "name": "Aphids",
+      "scientific_name": "Aphidoidea",
+      "affected_crops": ["tomato", "chili", "cotton", "most vegetables"],
+      "symptoms": [
+        "Small, soft-bodied insects on undersides of leaves",
+        "Yellowing and curling of leaves",
+        "Sticky honeydew on leaves",
+        "Black sooty mold growth"
+      ],
+      "damage": "Sap feeding reduces plant vigor, can transmit viruses",
+      "treatment": {
+        "organic": "Neem oil, insecticidal soap, lady beetles, lacewings",
+        "chemical": "Imidacloprid, acetamiprid, or pyrethroid insecticides",
+        "preventive": "Remove weeds, monitor plants regularly, encourage beneficial insects"
+      }
+    },
+    {
+      "id": "whiteflies",
+      "name": "Whiteflies",
+      "scientific_name": "Aleyrodidae",
+      "affected_crops": ["tomato", "chili", "cotton", "cucumber"],
+      "symptoms": [
+        "Tiny white insects that fly when disturbed",
+        "Yellowing of leaves",
+        "Sticky honeydew on leaves",
+        "Black sooty mold"
+      ],
+      "damage": "Sap feeding, virus transmission, reduces photosynthesis",
+      "treatment": {
+        "organic": "Yellow sticky traps, neem oil, predatory insects",
+        "chemical": "Imidacloprid, thiamethoxam, or spiromesifen",
+        "preventive": "Remove infected plants, use reflective mulches, monitor regularly"
+      }
+    }
+  ]
+}

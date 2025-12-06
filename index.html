@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropCare - Plant Diagnosis & Crop Health Platform</title>
+    <meta name="description" content="Get expert diagnosis for your crop health problems. Upload plant images, detect diseases, and receive treatment recommendations.">
+    <meta name="keywords" content="plant diagnosis, crop health, agriculture, disease detection, farming">
+
+    <meta property="og:title" content="CropCare - Plant Diagnosis Platform">
+    <meta property="og:description" content="Helping farmers and gardeners diagnose crop health problems using AI and community support">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="src/assets/images/cropcare-og-image.jpg">
+
+    <link rel="icon" type="image/x-icon" href="src/assets/icons/favicon.ico">
+
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <link rel="preload" href="src/css/styles.css" as="style">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CropCare",
+      "description": "A web platform for plant disease diagnosis and crop health management",
+      "url": "https://cropcare.example.com",
+      "applicationCategory": "Agriculture",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🌱</div>
+                    <span>CropCare</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                        <li><a href="#diagnose" onclick="showSection('diagnose')">Diagnose</a></li>
+                        <li><a href="#library" onclick="showSection('library')">Knowledge Base</a></li>
+                        <li><a href="#about" onclick="showSection('about')">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="content-section">
+            <div class="hero">
+                <div class="container">
+                    <h1>Protect Your Crops, Secure Your Harvest</h1>
+                    <p>Get instant plant disease diagnosis and expert treatment recommendations. Join thousands of farmers and gardeners using AI-powered crop health management.</p>
+                    <button class="btn btn-primary" onclick="showSection('diagnose')">
+                        Start Diagnosis Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">📸</div>
+                            <div class="card-title">AI-Powered Diagnosis</div>
+                        </div>
+                        <div class="card-content">
+                            Upload photos of your plants and get instant disease detection with our advanced image recognition technology. Identifies pests, diseases, and nutrient deficiencies.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">💊</div>
+                            <div class="card-title">Treatment Solutions</div>
+                        </div>
+                        <div class="card-content">
+                            Receive personalized treatment recommendations including organic, biological, and chemical options. Get preventive measures and best practices for your specific crop.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">👥</div>
+                            <div class="card-title">Community Support</div>
+                        </div>
+                        <div class="card-content">
+                            Connect with experienced farmers and agricultural experts. Share experiences, ask questions, and get advice from our growing community of crop health enthusiasts.
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-center" style="margin-bottom: 2rem;">How CropCare Works</h2>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-icon">1️⃣</div>
+                                <div class="card-title">Upload Photo</div>
+                            </div>
+                            <div class="card-content">
+                                Take a clear photo of the affected plant part (leaves, stem, fruits) and upload it through our easy-to-use interface.
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-icon">2️⃣</div>
+                                <div class="card-title">Get Diagnosis</div>
+                            </div>
+                            <div class="card-content">
+                                Our AI analyzes the image and identifies potential diseases, pests, or nutrient deficiencies within seconds.
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-icon">3️⃣</div>
+                                <div class="card-title">Treatment Advice</div>
+                            </div>
+                            <div class="card-content">
+                                Receive detailed treatment recommendations with step-by-step instructions and preventive measures.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagnose" class="content-section hidden">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 2rem;">Plant Disease Diagnosis</h1>
+                
+                <div class="card">
+                    <h2>Upload Plant Image</h2>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                        Take a clear, well-lit photo of the affected area. Include both healthy and affected parts if possible.
+                    </p>
+                    
+                    <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+                        <div class="upload-icon">📤</div>
+                        <h3>Click to upload or drag and drop</h3>
+                        <p style="color: var(--text-light);">PNG, JPG, GIF up to 10MB</p>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="handleFileSelect(event)">
+                    </div>
+                    
+                    <div id="imagePreview" class="hidden mt-3"></div>
+                </div>
+
+                <div class="card" id="cropInfoForm" style="display: none;">
+                    <h2>Crop Information</h2>
+                    <form id="diagnosisForm">
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="cropType">Crop Type *</label>
+                                <select class="form-select" id="cropType" required>
+                                    <option value="">Select crop type</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="potato">Potato</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="wheat">Wheat</option>
+                                    <option value="corn">Corn/Maize</option>
+                                    <option value="cotton">Cotton</option>
+                                    <option value="chili">Chili/Pepper</option>
+                                    <option value="brinjal">Brinjal/Eggplant</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="cauliflower">Cauliflower</option>
+                                    <option value="onion">Onion</option>
+                                    <option value="garlic">Garlic</option>
+                                    <option value="mango">Mango</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="growthStage">Growth Stage</label>
+                                <select class="form-select" id="growthStage">
+                                    <option value="">Select growth stage</option>
+                                    <option value="seedling">Seedling</option>
+                                    <option value="vegetative">Vegetative</option>
+                                    <option value="flowering">Flowering</option>
+                                    <option value="fruiting">Fruiting</option>
+                                    <option value="mature">Mature</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="symptoms">Describe Symptoms *</label>
+                            <textarea class="form-textarea" id="symptoms" rows="4" 
+                                placeholder="Please describe what you observe: leaf spots, yellowing, wilting, insect damage, etc." required></textarea>
+                        </div>
+
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="location">Location (District/State)</label>
+                                <input type="text" class="form-input" id="location" 
+                                    placeholder="e.g., Pune, Maharashtra">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="weather">Recent Weather</label>
+                                <select class="form-select" id="weather">
+                                    <option value="">Select weather condition</option>
+                                    <option value="dry">Dry and Hot</option>
+                                    <option value="humid">Humid</option>
+                                    <option value="rainy">Rainy</option>
+                                    <option value="cool">Cool and Dry</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="treatmentApplied">
+                                Have you applied any treatments recently?
+                            </label>
+                            <textarea class="form-textarea" id="treatmentApplied" rows="3" 
+                                placeholder="Mention any fertilizers, pesticides, or organic treatments applied in the last 2 weeks"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">
+                                Get Diagnosis
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="diagnosisResults" class="hidden">
+                </div>
+            </div>
+        </section>
+
+        <section id="library" class="content-section hidden">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 2rem;">Crop Knowledge Library</h1>
+                
+                <div class="card">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="librarySearch" 
+                            placeholder="Search for crops, diseases, pests, or treatments...">
+                    </div>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">🌾</div>
+                            <div class="card-title">Cereals & Grains</div>
+                        </div>
+                        <div class="card-content">
+                            Rice, Wheat, Corn, Millets, Sorghum
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">🥬</div>
+                            <div class="card-title">Vegetables</div>
+                        </div>
+                        <div class="card-content">
+                            Tomato, Potato, Onion, Chili, Cabbage
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">🍎</div>
+                            <div class="card-title">Fruits</div>
+                        </div>
+                        <div class="card-content">
+                            Mango, Banana, Apple, Citrus, Grapes
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2>Recent Articles & Guides</h2>
+                    <div id="libraryContent" class="grid grid-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="content-section hidden">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 2rem;">About CropCare</h1>
+                
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>
+                        CropCare is dedicated to helping farmers and gardeners protect their crops through 
+                        accessible technology and community knowledge. We believe that everyone should have 
+                        access to expert agricultural advice, regardless of their location or technical expertise.
+                    </p>
+                </div>
+
+                <div class="grid grid-2 mt-4">
+                    <div class="card">
+                        <h2>Why Choose CropCare?</h2>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;">✅ Free and accessible to all farmers</li>
+                            <li style="margin-bottom: 1rem;">✅ AI-powered disease detection</li>
+                            <li style="margin-bottom: 1rem;">✅ Localized treatment recommendations</li>
+                            <li style="margin-bottom: 1rem;">✅ Community-driven knowledge sharing</li>
+                            <li style="margin-bottom: 1rem;">✅ Mobile-friendly, works offline</li>
+                            <li>✅ Support for regional languages</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h2>Get Started</h2>
+                        <p>
+                            Join thousands of farmers who are already using CropCare to improve their crop 
+                            health and increase yields. Getting started is easy:
+                        </p>
+                        <ol style="padding-left: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">Upload a photo of your plant</li>
+                            <li style="margin-bottom: 0.5rem;">Describe the symptoms</li>
+                            <li style="margin-bottom: 0.5rem;">Get instant diagnosis and treatment advice</li>
+                            <li style="margin-bottom: 0.5rem;">Join the community for ongoing support</li>
+                        </ol>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-primary" onclick="showSection('diagnose')">
+                                Start Using CropCare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Have questions or feedback? We'd love to hear from you! 
+                        Email us at: support@cropcare.example.com
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CropCare</h3>
+                    <p>Your trusted partner in crop health management and disease diagnosis.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" onclick="showSection('home')">Home</a></li>
+                        <li><a href="#" onclick="showSection('diagnose')">Diagnose</a></li>
+                        <li><a href="#" onclick="showSection('library')">Knowledge Base</a></li>
+                        <li><a href="#" onclick="showSection('community')">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Crop Calendar</a></li>
+                        <li><a href="#">Treatment Guide</a></li>
+                        <li><a href="#">Weather Updates</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid #555; padding-top: 1rem; margin-top: 2rem;">
+                <p>&copy; 2025 CropCare. All rights reserved. Made with 🌱 for farmers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

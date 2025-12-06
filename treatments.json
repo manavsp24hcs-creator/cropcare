@@ -1,0 +1,263 @@
+{
+  "treatments": {
+    "organic": [
+      {
+        "name": "Neem Oil Spray",
+        "target": ["aphids", "whiteflies", "mites", "fungal_diseases"],
+        "preparation": "Mix 2 tablespoons of neem oil with 1 gallon of water and 1 teaspoon of mild soap",
+        "application": "Spray on affected parts, repeat every 7-10 days",
+        "benefits": "Biodegradable, safe for beneficial insects, multiple applications",
+        "cost": "Low",
+        "availability": "Widely available in agricultural stores"
+      },
+      {
+        "name": "Copper-Based Fungicide",
+        "target": ["early_blight", "late_blight", "bacterial_spot", "leaf_spot"],
+        "preparation": "Mix copper fungicide according to package instructions",
+        "application": "Spray foliage thoroughly, apply every 7-14 days",
+        "benefits": "Effective against wide range of fungal diseases",
+        "cost": "Medium",
+        "availability": "Available in most agricultural supply stores"
+      },
+      {
+        "name": "Compost Tea",
+        "target": ["soil_borne_diseases", "nutrient_deficiency", "plant_weakness"],
+        "preparation": "Steep compost in water for 24-48 hours, aerate regularly",
+        "application": "Soil drench or foliar spray, apply weekly",
+        "benefits": "Improves soil health, boosts plant immunity, provides nutrients",
+        "cost": "Very low",
+        "availability": "Can be made at home"
+      },
+      {
+        "name": "Garlic-Chili Spray",
+        "target": ["aphids", "whiteflies", "caterpillars", "beetles"],
+        "preparation": "Blend 10 garlic cloves and 5 chilies with 1 liter water, strain",
+        "application": "Spray on affected plants, repeat every 5-7 days",
+        "benefits": "Natural insect repellent, inexpensive",
+        "cost": "Very low",
+        "availability": "Can be made at home"
+      }
+    ],
+    "chemical": [
+      {
+        "name": "Chlorothalonil",
+        "target": ["early_blight", "late_blight", "leaf_spot", "anthracnose"],
+        "dosage": "2-3 grams per liter of water",
+        "application": "Foliar spray, apply every 7-10 days",
+        "precautions": "Wear protective clothing, avoid application during flowering",
+        "toxicity": "Moderate",
+        "cost": "Medium",
+        "waiting_period": "7-10 days before harvest"
+      },
+      {
+        "name": "Mancozeb",
+        "target": ["early_blight", "late_blight", "rust", "leaf_spot"],
+        "dosage": "2-3 grams per liter of water",
+        "application": "Foliar spray, apply every 10-14 days",
+        "precautions": "Avoid inhalation, use protective equipment",
+        "toxicity": "Low to moderate",
+        "cost": "Medium",
+        "waiting_period": "5-7 days before harvest"
+      },
+      {
+        "name": "Imidacloprid",
+        "target": ["aphids", "whiteflies", "beetles", "sucking_insects"],
+        "dosage": "0.5-1 ml per liter of water",
+        "application": "Soil drench or foliar spray",
+        "precautions": "Toxic to bees, avoid application during flowering",
+        "toxicity": "Moderate to high",
+        "cost": "Medium to high",
+        "waiting_period": "14-21 days before harvest"
+      },
+      {
+        "name": "Carbendazim",
+        "target": ["fungal_diseases", "seed_treatment", "soil_borne_pathogens"],
+        "dosage": "1-2 grams per liter of water",
+        "application": "Foliar spray or seed treatment",
+        "precautions": "Avoid prolonged exposure, use protective gear",
+        "toxicity": "Low",
+        "cost": "Low to medium",
+        "waiting_period": "3-5 days before harvest"
+      }
+    ],
+    "biological": [
+      {
+        "name": "Trichoderma viride",
+        "target": ["soil_borne_fungi", "root_rot", "wilt_diseases"],
+        "application_method": "Soil application or seed treatment",
+        "dosage": "1-2 kg per hectare or 10g per kg seed",
+        "benefits": "Promotes plant growth, suppresses pathogens",
+        "cost": "Medium",
+        "availability": "Available from biocontrol suppliers"
+      },
+      {
+        "name": "Pseudomonas fluorescens",
+        "target": ["bacterial_diseases", "fungal_diseases", "soil_pathogens"],
+        "application_method": "Soil drench or foliar spray",
+        "dosage": "2-5 liters per hectare",
+        "benefits": "Produces antibiotics, enhances plant immunity",
+        "cost": "Medium",
+        "availability": "Available from biocontrol laboratories"
+      },
+      {
+        "name": "Beauveria bassiana",
+        "target": ["whiteflies", "aphids", "beetles", "caterpillars"],
+        "application_method": "Foliar spray",
+        "dosage": "1-2 liters per hectare",
+        "benefits": "Fungal pathogen for insects, environmentally safe",
+        "cost": "Medium to high",
+        "availability": "Available from biocontrol suppliers"
+      },
+      {
+        "name": "Bacillus thuringiensis (Bt)",
+        "target": ["caterpillars", "borers", "armyworms"],
+        "application_method": "Foliar spray",
+        "dosage": "1-2 kg per hectare",
+        "benefits": "Specific to caterpillars, safe for humans and beneficial insects",
+        "cost": "Medium",
+        "availability": "Widely available"
+      }
+    ]
+  },
+  "preventive_measures": {
+    "general": [
+      "Use disease-resistant and locally adapted varieties",
+      "Practice crop rotation (2-3 year rotation for most crops)",
+      "Maintain proper plant spacing for good air circulation",
+      "Avoid overhead watering to reduce leaf wetness",
+      "Remove and destroy infected plant debris",
+      "Keep fields free of weeds that can host pests and diseases",
+      "Monitor crops regularly for early detection",
+      "Apply balanced fertilizers based on soil tests"
+    ],
+    "soil_management": [
+      "Test soil annually and amend based on results",
+      "Maintain soil pH between 6.0-7.0 for most crops",
+      "Incorporate organic matter (compost, farmyard manure)",
+      "Use cover crops to improve soil health",
+      "Avoid soil compaction through proper tillage"
+    ],
+    "water_management": [
+      "Water early in the day to allow leaves to dry",
+      "Use drip irrigation to reduce leaf wetness",
+      "Avoid overwatering which can lead to root diseases",
+      "Ensure proper drainage to prevent waterlogging",
+      "Mulch around plants to conserve moisture"
+    ],
+    "integrated_pest_management": [
+      "Encourage beneficial insects (lady beetles, lacewings, bees)",
+      "Use physical barriers (nets, row covers)",
+      "Apply pheromone traps for monitoring and control",
+      "Practice mechanical control (hand picking, traps)",
+      "Use biological control agents when available",
+      "Apply chemical controls only when necessary and as last resort"
+    ]
+  },
+  "regional_recommendations": {
+    "north_india": {
+      "seasonal_tips": {
+        "summer": "Focus on irrigation management, monitor for heat stress",
+        "monsoon": "Prevent fungal diseases, ensure proper drainage",
+        "winter": "Protect from frost, adjust fertilizer application",
+        "spring": "Optimal planting time for most vegetables"
+      },
+      "common_issues": [
+        "Heat stress in summer",
+        "Fungal diseases during monsoon",
+        "Frost damage in winter",
+        "Nutrient deficiencies in sandy soils"
+      ],
+      "local_solutions": [
+        "Use mulching to conserve moisture",
+        "Plant windbreaks to reduce wind damage",
+        "Apply micronutrients (zinc, boron) as needed",
+        "Use shade nets for heat-sensitive crops"
+      ]
+    },
+    "south_india": {
+      "seasonal_tips": {
+        "summer": "Intensive irrigation needed, pest pressure high",
+        "monsoon": "Disease pressure highest, use resistant varieties",
+        "winter": "Good growing season, moderate temperatures",
+        "post_monsoon": "Ideal for vegetable cultivation"
+      },
+      "common_issues": [
+        "High humidity diseases",
+        "Soil-borne pathogens",
+        "Nutrient leaching in heavy rains",
+        "Pest outbreaks in summer"
+      ],
+      "local_solutions": [
+        "Use raised beds for better drainage",
+        "Apply biofertilizers regularly",
+        "Practice intercropping for pest management",
+        "Use drought-resistant varieties"
+      ]
+    },
+    "west_india": {
+      "seasonal_tips": {
+        "summer": "Extreme heat protection needed",
+        "monsoon": "Short but intense rainfall period",
+        "winter": "Mild temperatures, good growing conditions",
+        "spring": "Transition period, variable weather"
+      },
+      "common_issues": [
+        "Water scarcity in summer",
+        "Soil salinity in coastal areas",
+        "Wind damage",
+        "Temperature fluctuations"
+      ],
+      "local_solutions": [
+        "Use drip irrigation with scheduling",
+        "Apply gypsum for saline soils",
+        "Windbreaks using casuarina or other trees",
+        "Mulching with crop residues"
+      ]
+    },
+    "east_india": {
+      "seasonal_tips": {
+        "summer": "High humidity, heavy rainfall in areas",
+        "monsoon": "Very heavy rainfall, flood risk",
+        "winter": "Cool and dry, ideal for many crops",
+        "spring": "Gradual warming, planting season"
+      },
+      "common_issues": [
+        "Waterlogging and flooding",
+        "Acidic soils",
+        "Fungal diseases due to high humidity",
+        "Nutrient deficiencies in laterite soils"
+      },
+      "local_solutions": [
+        "Use raised beds and proper drainage",
+        "Apply lime to acidic soils",
+        "Use flood-resistant varieties",
+        "Regular soil amendments"
+      ]
+    }
+  },
+  "emergency_contacts": {
+    "india": {
+      "national_crises_management": "011-23063203",
+      "agriculture_department": "1800-180-1551",
+      "pesticide_info": "1800-110-001",
+      "weather_forecast": "011-24622777"
+    },
+    "state_contacts": {
+      "maharashtra": {
+        "agriculture_department": "022-22027444",
+        "pesticide_control": "022-24934214",
+        "plant_clinic": "022-24930573"
+      },
+      "uttar_pradesh": {
+        "agriculture_department": "0522-2307614",
+        "pesticide_control": "0522-2307615",
+        "plant_clinic": "0522-2307616"
+      },
+      "punjab": {
+        "agriculture_department": "0172-2742744",
+        "pesticide_control": "0172-2742745",
+        "plant_clinic": "0172-2742746"
+      }
+    }
+  }
+}
